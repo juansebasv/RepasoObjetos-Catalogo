@@ -1,3 +1,6 @@
+VARIABLE_ORCOS = "Orcos"
+VARIABLE_HUMANOS = "Humanos"
+
 class Producto:
     def __init__(self):
         self.imagen = ""
@@ -10,15 +13,15 @@ class Arma(Producto):
 
 class ArmaHumanos(Arma):
     def __init__(self):
-        self.grupo = "Humanos"
+        self.grupo = VARIABLE_HUMANOS
         self.imagen = "imagenes/humanos/arma.png"
-        self.descripcion = "arma de los humanos"
+        self.descripcion = "Arma de los Humanos"
         
 class ArmaOrcos(Arma):
     def __init__(self):
-        self.grupo = "Orcos"
+        self.grupo = VARIABLE_ORCOS
         self.imagen = "imagenes/orcos/arma.png"
-        self.descripcion = "arma de los orcos"
+        self.descripcion = "Arma de los Orcos"
 
 class Escudo(Producto):
     def __init__(self):
@@ -26,15 +29,15 @@ class Escudo(Producto):
 
 class EscudoHumanos(Arma):
     def __init__(self):
-        self.grupo = "Humanos"
+        self.grupo = VARIABLE_HUMANOS
         self.imagen = "imagenes/humanos/escudo.png"
-        self.descripcion = "escudo de los humanos"
+        self.descripcion = "Escudo de los Humanos"
         
 class EscudoOrcos(Arma):
     def __init__(self):
-        self.grupo = "Orcos"
+        self.grupo = VARIABLE_ORCOS
         self.imagen = "imagenes/orcos/escudo.png"
-        self.descripcion = "escudo de los orcos"
+        self.descripcion = "Escudo de los Orcos"
 
 class Montura(Producto):
     def __init__(self):
@@ -42,15 +45,15 @@ class Montura(Producto):
 
 class MonturaHumanos(Montura):
     def __init__(self):
-        self.grupo = "Humanos"
+        self.grupo = VARIABLE_HUMANOS
         self.imagen = "imagenes/humanos/montura.png"
-        self.descripcion = "montura de los humanos"
+        self.descripcion = "Montura de los Humanos"
         
 class MonturaOrcos(Montura):
     def __init__(self):
-        self.grupo = "Orcos"
+        self.grupo = VARIABLE_ORCOS
         self.imagen = "imagenes/orcos/montura.png"
-        self.descripcion = "montura de los orcos"
+        self.descripcion = "Montura de los Orcos"
 
 class Personaje(Producto):
     def __init__(self):
@@ -58,12 +61,12 @@ class Personaje(Producto):
 
 class PersonajeHumanos(Personaje):
     def __init__(self):
-        self.grupo = "Humanos"
+        self.grupo = VARIABLE_HUMANOS
         self.imagen = "imagenes/humanos/personaje.png"
-        self.descripcion = "personaje de los humanos"
+        self.descripcion = "Personaje de los Humanos"
         
 class PersonajeOrcos(Personaje):
     def __init__(self):
-        self.grupo = "Orcos"
+        self.grupo = VARIABLE_ORCOS
         self.imagen = "imagenes/orcos/personaje.png"
-        self.descripcion = "personaje de los orcos"
+        self.descripcion = "Personaje de los Orcos"
