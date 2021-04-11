@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Productos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>        
+    <style>
+        #juego {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #juego td, #juego th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #juego tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #juego tr:hover {background-color: #ddd;}
+        
+        #juego th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    <table id="juego" border="1">
+        <tr>
+            <th><center>Grupo</center></th><th><center>Imagen</center></th><th><center>Descripcion</center></th>
+        </tr>
+        {% for p in productos %}
+            <tr>
+                <td><font style="color: red"><center>{{ p.grupo }}</center></font></td>
+                <td><center><img src="static/{{ p.imagen }}" alt="{{ p.imagen }}" width="150px"></center></td>
+                <td>{{ p.descripcion }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
