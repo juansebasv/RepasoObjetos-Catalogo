@@ -39,3 +39,18 @@ Proporciona en nuestro código una interfaz unificada para un conjunto de interf
 Por medio de este patron podemos implementar muchas más funcionalidades dentro de nuestro código, representando en un abstracción llamada "Producto" podemos diseñar más implementadores de estas caracteristicas sin alterar nuestro flujo inicial y sin llegar a alterar al cliente de la aplicación.
 
 ![image](https://user-images.githubusercontent.com/12587275/115155769-eda37700-a046-11eb-962d-929dc57cd222.png)
+
+
+Endpoint:
+
+GET: http://127.0.0.1:5000/v1
+
+
+![image](https://user-images.githubusercontent.com/12587275/115159319-344d9d00-a058-11eb-8e17-f72ad4454cef.png)
+
+
+GET: http://127.0.0.1:5000/v2
+
+
+![image](https://user-images.githubusercontent.com/12587275/115159338-46c7d680-a058-11eb-9cc2-350bb55c0334.png)
+
