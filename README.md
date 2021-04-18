@@ -37,3 +37,5 @@ Proporciona en nuestro código una interfaz unificada para un conjunto de interf
 
 #Bridge:
 Por medio de este patron podemos implementar muchas más funcionalidades dentro de nuestro código, representando en un abstracción llamada "Producto" podemos diseñar más implementadores de estas caracteristicas sin alterar nuestro flujo inicial y sin llegar a alterar al cliente de la aplicación.
+
+![image](https://user-images.githubusercontent.com/12587275/115155769-eda37700-a046-11eb-962d-929dc57cd222.png)
